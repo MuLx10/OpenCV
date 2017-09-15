@@ -1,2 +1,3 @@
 # OpenCv
-codes of opencv in c++
+opencv in c++
+opencv in py
