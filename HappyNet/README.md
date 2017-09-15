@@ -1,6 +1,6 @@
 
 
-##Requirements:
+**Requirements:**
 	> 2 GB of memory
 	Caffe and OpenCV installed
 	Webcam
@@ -13,17 +13,16 @@
 		Caffe must be compiled with these CUDA and CuDNN selected
 
 
+**Description of files:**
 
-##Description of files:
-
-#Main scripts: 
+Main scripts: 
 	gather_training_data.py - Use this to generate a custom training set
 	process_dataset.py - Read in an entire training set and calculate accuracy over the set
 	process_image.py   - Read in a single image, add the correct emoji, and write to file
 	video_generate.py  - Run HappyNet in real-time and save output to video
 	video_test.py      - Run HappyNet in real-time; does not save to video
 
-#Scripts for retraining the network on new data:
+**Scripts for retraining the network on new data:**
 
 	These 5 scripts are to be run in numerical order
 	Note you'll need to modify them with your own paths
@@ -49,16 +48,15 @@
 		Run this when you are getting ready to start over from file 0.
 		Don't run it until then though - you might want to reuse the info in those files!
 
-#Utility functions:
+**Utility functions:**
 	caffe_functions.py  - anything dealing primarily with caffe
 	opencv_functions.py - anything dealing primarily with opencv
 	utility_functions.py - General functions mostly related to file I/O
 
-#Datasets:
+**Datasets:**
 	Only contains the emojis we used.
 	Cohn-Kanade Plus (CK+) and Japanese Female Facial Expressions (JAFFE) can be downloaded online.
-
-#Models:
+**Models:**
 	deploy.prototxt - Architecture of our model (this file should not need to be changed)
 	solver.prototxt - This configures the retraining process.
 	train.prototxt - This configures the architecture during training. 
